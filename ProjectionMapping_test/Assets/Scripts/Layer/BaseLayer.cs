@@ -5,5 +5,5 @@ using UnityEngine;
 public class BaseLayer : MonoBehaviour
 {
     
-
+    public string[] LayerArr;
 }
