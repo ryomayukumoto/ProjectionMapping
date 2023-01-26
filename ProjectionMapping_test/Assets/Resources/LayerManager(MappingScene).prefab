@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5717226403921619699}
   - component: {fileID: 5717226403921619700}
   m_Layer: 0
-  m_Name: LayerManager(ShowScene)
+  m_Name: LayerManager(MappingScene)
   m_TagString: Show
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
