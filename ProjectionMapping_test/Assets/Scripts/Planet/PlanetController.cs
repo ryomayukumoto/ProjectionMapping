@@ -36,7 +36,7 @@ public class PlanetController : MonoBehaviour
                 hitMan.transform.DOMove(new Vector3(7.2f, 0.5f, 0), 10f).SetEase(Ease.OutQuad);
             hitMan.SetActive(true);
         }
-        if(time > 10f)
+        if(time > 180f)
         {
             
             this.gameObject.GetComponent<SpriteRenderer>().sprite = ball;
