@@ -9,7 +9,7 @@ public class LayerController : BaseLayer
     public float time;
     int r = 0;
     int count = 0;
-    List<Vector3> FlowerPos = new List<Vector3>//¶¬À•Wˆê——
+    List<Vector3> FlowerPos = new List<Vector3>//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Wï¿½ê——
 
         {
 
@@ -22,7 +22,7 @@ public class LayerController : BaseLayer
             new Vector3(-1.1f, 4f, 0),new Vector3(1.5f, 3.8f, 0),
             new Vector3(-2.4f, -4.3f, 0),new Vector3(1.4f, -4.8f, 0)
 
-        };//ƒvƒŒƒ[ƒ“ƒg‚ª¶¬‚³‚ê‚éÀ•W’n“_‚Ìˆê——B
+        };//ï¿½vï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Wï¿½nï¿½_ï¿½Ìˆê——ï¿½B
 
     void Start()
     {
@@ -77,14 +77,14 @@ public class LayerController : BaseLayer
                     count += 1;
                 
 
-                    Instantiate(Resources.Load(LayerArr[counter]), FlowerPos[i], Quaternion.identity);
+                    Instantiate(Resources.Load(LayerArr[counter]), FlowerPos[i], Quaternion.identity, transform);
 
                 }
 
 
             }
             else
-         Instantiate(Resources.Load(LayerArr[counter]), Vector3.zero, Quaternion.identity);
+         Instantiate(Resources.Load(LayerArr[counter]), Vector3.zero, Quaternion.identity, transform);
 
         }
 
