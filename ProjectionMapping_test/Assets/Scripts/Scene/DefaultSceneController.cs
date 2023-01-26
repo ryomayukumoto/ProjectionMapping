@@ -19,7 +19,7 @@ public class DefaultSceneController : SceneController
         }
         else if(Input.GetKeyDown("m"))
         {
-           
+            Debug.Log("m");
             ScenePhase = BaseScene.Scene.MappingScene;
             InitScene("LayerManager(MappingScene)");
         }

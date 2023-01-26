@@ -6,15 +6,14 @@ using UnityEngine;
 public class SceneController : BaseScene
 {
 
-    public static ShowSceneController ShowSceneCtrl;
     public static MappingSceneController MapSceneCtrl;
     public static DefaultSceneController defaultSceneCtrl;
 
     void Start()
     {
-        ShowSceneCtrl = GameObject.FindWithTag("SceneManager").GetComponent<ShowSceneController>();
         MapSceneCtrl = GameObject.FindWithTag("SceneManager").GetComponent<MappingSceneController>();
         defaultSceneCtrl = GameObject.FindWithTag("SceneManager").GetComponent<DefaultSceneController>();
+
         
     }
 
@@ -25,10 +24,10 @@ public class SceneController : BaseScene
         {
             case BaseScene.Scene.ShowScene:
 
-                ShowSceneCtrl.DoUpdate();
+                
                 break;
             case BaseScene.Scene.MappingScene:
-                
+                MapSceneCtrl.DoUpdate();
                 break;
             
             

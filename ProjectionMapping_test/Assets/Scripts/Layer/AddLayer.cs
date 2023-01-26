@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AddLayer : BaseLayer
+public class AddLayer : LayerController
 {
 
+    
 }
