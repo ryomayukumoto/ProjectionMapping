@@ -144,7 +144,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4042023011565198, guid: abfb35fba4b9d0241ab822f66f51fa9e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.04
+      value: 5.25
       objectReference: {fileID: 0}
     - target: {fileID: 4042023011565198, guid: abfb35fba4b9d0241ab822f66f51fa9e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -184,7 +184,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 198617523707308622, guid: abfb35fba4b9d0241ab822f66f51fa9e, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 15
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 198617523707308622, guid: abfb35fba4b9d0241ab822f66f51fa9e, type: 3}
       propertyPath: InitialModule.gravityModifier.scalar
@@ -995,6 +995,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1842769008 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1795063148231502, guid: abfb35fba4b9d0241ab822f66f51fa9e, type: 3}
+  m_PrefabInstance: {fileID: 26005896}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1842769010 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198617523707308622, guid: abfb35fba4b9d0241ab822f66f51fa9e, type: 3}
+  m_PrefabInstance: {fileID: 26005896}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1842769012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842769008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d58c989537b0d244f83d9fe49f3f8dbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  petal: {fileID: 1842769010}
+  amount: 30
+  speed: 1.8
 --- !u!1 &1868029215
 GameObject:
   m_ObjectHideFlags: 0
@@ -1005,7 +1030,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1868029217}
   - component: {fileID: 1868029216}
-  - component: {fileID: 1868029218}
   m_Layer: 0
   m_Name: SpaceBg
   m_TagString: Untagged
@@ -1080,15 +1104,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1868029218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1868029215}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b79e9705dd72142429411a2b676bb5cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
