@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class LayerController : BaseLayer
 {
-    [SerializeField] public const int Layers = 17;
+    [SerializeField] public const int Layers = 14;
     public AudioClip sound;
+<<<<<<< HEAD
     public float time;
     int r = 0;
     int count = 0;
@@ -23,6 +24,8 @@ public class LayerController : BaseLayer
             new Vector3(-2.4f, -4.3f, 0),new Vector3(1.4f, -4.8f, 0)
 
         };//�v���[���g�������������W�n�_�̈ꗗ�B
+=======
+>>>>>>> feature/feature
 
     void Start()
     {
@@ -44,10 +47,7 @@ public class LayerController : BaseLayer
             "Layer/10",
             "Layer/11",
             "Layer/12",
-            "Layer/flower1",
-            "Layer/flower2",
-            "Layer/flower3",
-            "Layer/flower4",
+            "Layer/flowers",
 
         };
     }
@@ -65,6 +65,7 @@ public class LayerController : BaseLayer
         {
 
             if (counter == 13)
+<<<<<<< HEAD
             {        
                
                 for(int i = 0 ;i <=16; i++)
@@ -80,7 +81,11 @@ public class LayerController : BaseLayer
                     Instantiate(Resources.Load(LayerArr[counter]), FlowerPos[i], Quaternion.identity, transform);
 
                 }
+=======
+            {
+>>>>>>> feature/feature
 
+                Instantiate(Resources.Load(LayerArr[counter]), new Vector3(0,0,-1), Quaternion.identity);
 
             }
             else
