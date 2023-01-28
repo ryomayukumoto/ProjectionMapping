@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class LayerController : BaseLayer
 {
-    [SerializeField] public const int Layers = 14;
+    [SerializeField] public const int Layers = 12;
     public AudioClip sound;
     void Start()
     {
@@ -14,8 +14,6 @@ public class LayerController : BaseLayer
 
         LayerArr = new string[Layers]
 {
-            "Layer/0",
-            "Layer/1",
             "Layer/2",
             "Layer/3",
             "Layer/4",
@@ -27,7 +25,7 @@ public class LayerController : BaseLayer
             "Layer/10",
             "Layer/11",
             "Layer/12",
-            "Layer/flowers",
+            "Layer/13",
 
 };
     }
@@ -36,9 +34,9 @@ public class LayerController : BaseLayer
         if (counter < LayerArr.Length)
         {
 
-            if (counter == 13)
+            if (counter == 11)
             {
-                Instantiate(Resources.Load(LayerArr[counter]), new Vector3(0, 0, -1), Quaternion.identity);
+                Instantiate(Resources.Load(LayerArr[counter]), new Vector3(0, 0, -1), Quaternion.identity,transform);
             }
             else
                 Instantiate(Resources.Load(LayerArr[counter]), Vector3.zero, Quaternion.identity, transform);

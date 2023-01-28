@@ -6,6 +6,7 @@ public class WeatherController : MonoBehaviour
 {
     public float T;
     public GameObject littlerain;
+    public GameObject rainmc;
     public GameObject rain;
     public GameObject bigrain;
     public GameObject snow;
@@ -15,6 +16,7 @@ public class WeatherController : MonoBehaviour
     {            
         littlerain.SetActive(false);
         rain.SetActive(false);
+        rainmc.SetActive(false);
         bigrain.SetActive(false);
         snow.SetActive(false);
     }
@@ -24,43 +26,75 @@ public class WeatherController : MonoBehaviour
     {
         T += Time.deltaTime;
 
-        if (T > 0 && T < 10)
+        if (T > 600 && T < 900)
 
         {
-            Debug.Log("??1");
+            rainmc.SetActive(true);
             littlerain.SetActive(true);
             rain.SetActive(false);
             bigrain.SetActive(false);
             snow.SetActive(false);
         }
-        if (T > 10 && T < 20)
+        if (T > 900 && T < 1500)
         {
-            Debug.Log("??2");
-            littlerain.SetActive(false);
-            rain.SetActive(true);
-            bigrain.SetActive(false);
-            snow.SetActive(false);
-        }
-        if (T >20 && T <30)
-        {
-            Debug.Log("??3");
+
+            rainmc.SetActive(false);
             littlerain.SetActive(false);
             rain.SetActive(false);
-            bigrain.SetActive(true);
+            bigrain.SetActive(false);
             snow.SetActive(false);
 
         }
-        if (T > 30 && T < 40)
+        if (T > 1500 && T < 1800)
         {
-            Debug.Log("??4");
             littlerain.SetActive(false);
             rain.SetActive(false);
             bigrain.SetActive(false);
             snow.SetActive(true);
         }
-        if (T > 40 && T < 50)
+        if (T > 1800 && T < 2400)
         {
-            Debug.Log("??5");
+
+            rainmc.SetActive(false);
+            littlerain.SetActive(false);
+            rain.SetActive(false);
+            bigrain.SetActive(false);
+            snow.SetActive(false);
+
+        }
+
+        if (T >2400 && T <2700)
+        {
+            rainmc.SetActive(true);
+            littlerain.SetActive(false);
+            rain.SetActive(true);
+            bigrain.SetActive(false);
+            snow.SetActive(false);
+
+        }
+
+        if (T > 2700 && T < 3300)
+        {
+
+            rainmc.SetActive(false);
+            littlerain.SetActive(false);
+            rain.SetActive(false);
+            bigrain.SetActive(false);
+            snow.SetActive(false);
+
+        }
+
+        if (T > 3300 && T < 3600)
+        {
+            rainmc.SetActive(true);
+            littlerain.SetActive(false);
+            rain.SetActive(false);
+            bigrain.SetActive(true);
+            snow.SetActive(false);
+        }
+        if (T > 3600)
+        {
+            rainmc.SetActive(false);
             littlerain.SetActive(false);
             rain.SetActive(false);
             bigrain.SetActive(false);

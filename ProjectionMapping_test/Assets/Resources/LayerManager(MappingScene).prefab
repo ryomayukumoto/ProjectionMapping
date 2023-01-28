@@ -45,4 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LayerArr: []
-  sound: {fileID: 8300000, guid: bcc72f8055744c742b76567919d660c2, type: 3}
+  sound: {fileID: 8300000, guid: 6b0b4a37664a0964886a5666a767a15c, type: 3}
